@@ -203,6 +203,10 @@ a:focus {
     padding: 48px 24px 24px;
 }
 
+.o-row--light {
+    background-color: #f7f7f7;
+}
+
 @media (min-width: 768px) {
     .o-row {
         padding-left: 48px;
