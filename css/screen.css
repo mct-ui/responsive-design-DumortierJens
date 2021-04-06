@@ -498,59 +498,48 @@ a:focus {
 .c-footer {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .c-footer__logo {
-    flex-basis: 100%;
+    width: 100%;
 }
 
 .c-footer__nav {
-    flex-basis: 50%;
+    width: 50%;
 }
 
 @media (min-width: 768px) {
     .c-footer {
         justify-content: center;
-        margin: 0 -24px;
+        align-items: center;
     }
 
     .c-footer__logo {
-        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 
     .c-footer__nav {
-        flex-basis: auto;
-        padding: 0 24px;
-        display: flex;
-    }
-
-    .c-footer li {
-        flex-basis: auto;
+        width: auto;
+        padding: 0 16px;
     }
 }
 
 @media (min-width: 992px) {
     .c-footer {
+        justify-content: space-between;
     }
 
     .c-footer__logo {
-        flex: 1;
-        order: 1;
-    }
-
-    .c-footer__logo .c-logo {
-        margin: auto;
+        width: auto;
     }
 
     .c-footer__nav {
-        flex: 1;
-        justify-content: flex-start;
+        padding: 0;
     }
 
-    .c-footer__nav:nth-child(3) {
-        order: 2;
-        justify-content: flex-end;
+    .c-footer__nav + .c-footer__nav {
+        order: -1;
     }
 }
 
